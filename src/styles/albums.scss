@@ -1,0 +1,54 @@
+.album-list-container {
+	.album-container {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.album-name {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0.725rem;
+	}
+
+	.waves {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.gentle-wave > use {
+		animation: wave 25s cubic-bezier(.55,.5,.45,.5) infinite;
+		animation-delay: -2s;
+		animation-duration: 5s;
+		animation-play-state: paused;
+	}
+
+	.album-container:hover .gentle-wave > use {
+		animation-play-state: running;
+	}
+}
+
+@media screen and (max-width: 476px) {
+	.album-name {
+		font-size: 2rem;
+	}
+}
+
+/* Animation */
+@keyframes wave {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}

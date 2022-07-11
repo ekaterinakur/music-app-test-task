@@ -1,0 +1,72 @@
+$base-color: #791199;
+
+@import './loader.scss';
+@import './albums.scss';
+@import './songs.scss';
+@import './player.scss';
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		cursor: default;
+	}
+}
+
+.container {
+	max-width: 40rem;
+	padding: 3rem 1rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+	color: $base-color;
+	text-align: right;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -1rem;
+}
+
+.flex-col {
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+	width: 15rem;
+	flex: 0 0 15rem;
+	height: 15rem;
+}
+
+@media screen and (max-width: 476px) {
+	.flex-container {
+		margin: 0;
+	}
+
+	.flex-col {
+		width: 100%;
+		flex: 0 0 100%;
+		height: 20rem;
+		padding: 0;
+	}
+}
