@@ -17,7 +17,7 @@ const FavouriteButton = () => {
 		<button
 			className='player-btn-favourite'
 			onClick={toggleFavourite}
-			style={{ backgroundImage: `url('/media/${playedSong.isFavourite ? 'heart-full' : 'heart'}.svg')` }}
+			style={{ backgroundImage: `url('/music-app-test-task/media/${playedSong.isFavourite ? 'heart-full' : 'heart'}.svg')` }}
 		></button>
 	);
 };

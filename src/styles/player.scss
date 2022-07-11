@@ -54,15 +54,15 @@
 		&-play {
 			width: 2.5rem;
 			height: 2.5rem;
-			background-image: url('/media/play.svg');
+			background-image: url('/music-app-test-task/media/play.svg');
 		}
 
 		&-prev {
-			background-image: url('/media/play-back.svg');
+			background-image: url('/music-app-test-task/media/play-back.svg');
 		}
 
 		&-next {
-			background-image: url('/media/play-back.svg');
+			background-image: url('/music-app-test-task/media/play-back.svg');
 			transform:scaleX(-1);
 		}
 	}

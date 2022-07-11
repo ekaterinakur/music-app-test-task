@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Container from './components/Container';
 import AlbumList from './components/AlbumList';
 import SongList from './components/SongList';
@@ -7,7 +7,7 @@ import NoMatch from './components/NoMatch';
 
 const App = () => (
   <Container>
-    <Router>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Redirect exact from='/' to="/albums" />
         <Route exact path='/albums' >
@@ -21,7 +21,7 @@ const App = () => (
           <NoMatch />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   </Container>
 );
 
