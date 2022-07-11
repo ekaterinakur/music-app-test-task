@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/music-app-test-task/static/css/main.2843a3b0.chunk.css",
+    "main.js": "/music-app-test-task/static/js/main.888617ca.chunk.js",
+    "main.js.map": "/music-app-test-task/static/js/main.888617ca.chunk.js.map",
+    "runtime-main.js": "/music-app-test-task/static/js/runtime-main.00b94735.js",
+    "runtime-main.js.map": "/music-app-test-task/static/js/runtime-main.00b94735.js.map",
+    "static/js/2.0375a179.chunk.js": "/music-app-test-task/static/js/2.0375a179.chunk.js",
+    "static/js/2.0375a179.chunk.js.map": "/music-app-test-task/static/js/2.0375a179.chunk.js.map",
+    "index.html": "/music-app-test-task/index.html",
+    "precache-manifest.7a3e6e86513cf31df8a54a1ed60afb28.js": "/music-app-test-task/precache-manifest.7a3e6e86513cf31df8a54a1ed60afb28.js",
+    "service-worker.js": "/music-app-test-task/service-worker.js",
+    "static/css/main.2843a3b0.chunk.css.map": "/music-app-test-task/static/css/main.2843a3b0.chunk.css.map",
+    "static/js/2.0375a179.chunk.js.LICENSE.txt": "/music-app-test-task/static/js/2.0375a179.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00b94735.js",
+    "static/js/2.0375a179.chunk.js",
+    "static/css/main.2843a3b0.chunk.css",
+    "static/js/main.888617ca.chunk.js"
+  ]
+}
