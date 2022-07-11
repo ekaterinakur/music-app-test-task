@@ -16,7 +16,7 @@ const AlbumList = () => {
       () => {
         dispatch(getAlbums());
       },
-      1500
+      1000
     );
 
     return () => clearTimeout(fakeRequestTimeout);

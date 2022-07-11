@@ -14,13 +14,13 @@ const SongList = () => {
   const isLoading = useSelector(store => store.isLoading);
 
   useEffect(() => {
-    setLoadingStatus(true);
+    dispatch(setLoadingStatus(true));
 
 		const fakeRequestTimeout = setTimeout(
       () => {
         dispatch(getSongs(albumId));
       },
-      1500
+      1000
     );
 
     return () => clearTimeout(fakeRequestTimeout);
@@ -33,16 +33,18 @@ const SongList = () => {
   return <>
       <Player />
 
-      {isLoading
-        ? <Loader />
-        : (songs.map(song =>
-          <SongItem
-            key={song.id} 
-            song={song}
-            isPlayed={playedSong && song.id === playedSong.id}
-            handlePlaySong={handlePlaySong} 
-          />
-        ))}
+      <div className="container">
+        {isLoading
+          ? <Loader />
+          : (songs.map(song =>
+            <SongItem
+              key={song.id} 
+              song={song}
+              isPlayed={playedSong && song.id === playedSong.id}
+              handlePlaySong={handlePlaySong} 
+            />
+          ))}
+      </div>
   </>
 }
 
