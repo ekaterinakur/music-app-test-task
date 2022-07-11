@@ -1,0 +1,69 @@
+.player-container {
+	.player-song-info {
+		margin-bottom: 1.5rem;
+	}
+	.player-empty {
+		font-size: 2.5rem;
+		line-height: 4rem;
+		color: $base-color;
+	}
+
+	.player-btn-favourite {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 1rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.player-progress {
+		width: 100%;
+		height: 3px;
+		margin-bottom: 2rem;
+		position: relative;
+		background-color: transparentize($base-color, 0.4);
+
+		&-dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $base-color;
+			position: absolute;
+			left: -4px;
+			top: -4px;
+		}
+	}
+
+	.player-actions {
+		margin-bottom: 2rem;
+		justify-content: center;
+	}
+
+	.player-btn {
+		width: 2rem;
+		height: 2rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+
+		&-play {
+			width: 2.5rem;
+			height: 2.5rem;
+			background-image: url('/media/play.svg');
+		}
+
+		&-prev {
+			background-image: url('/media/play-back.svg');
+		}
+
+		&-next {
+			background-image: url('/media/play-back.svg');
+			transform:scaleX(-1);
+		}
+	}
+}

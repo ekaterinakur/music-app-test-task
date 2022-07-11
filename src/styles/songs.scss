@@ -1,0 +1,80 @@
+.song-container {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $base-color;
+
+	&.song-active {
+		color: $base-color;
+		font-weight: 500;
+	}
+
+	.song-actions {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+
+		.song-favourite,
+		.button-play {
+			width: 1.5rem;
+			height: 1.5rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-left: 1.5rem;
+		}
+
+		.song-favourite {
+			background-image: url('/media/heart-full.svg');
+		}
+
+		.button-play {
+			background-image: url('/media/play.svg');
+		}
+	}
+}
+
+.song-info-container {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+
+	.song-image {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 1rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.song-name {
+		font-weight: 500;
+		font-size: 1.125rem;
+	}
+
+	.song-author {
+		opacity: 0.7;
+	}
+
+	&.large {
+		.song-image {
+			width: 4rem;
+			height: 4rem;
+			margin-right: 2rem;
+		}
+
+		.song-name {
+			font-size: 1.5rem;
+		}
+
+		.song-author {
+			font-size: 1.125rem;
+		}
+	}
+}
